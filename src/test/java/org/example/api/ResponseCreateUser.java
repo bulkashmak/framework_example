@@ -2,6 +2,11 @@ package org.example.api;
 
 import java.util.Objects;
 
+/**
+ * Это DTO (Data Transfer Object) класс.
+ * С его помощью можно преобразовать, например JSON, в объект.
+ * Это нужно для удобства. С объктами проще работать.
+ */
 public class ResponseCreateUser {
 
     private String name;

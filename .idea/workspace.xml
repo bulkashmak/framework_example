@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aea562e-5640-4825-a188-8c9a4bfb4c69" name="Changes" comment="Initial setup">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/WebTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/api/ApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/api/RequestCreateUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/api/ResponseCreateUser.java" afterDir="false" />
+    <list default="true" id="5aea562e-5640-4825-a188-8c9a4bfb4c69" name="Changes" comment="API тесты">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/WebTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/web/WebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/api/RequestCreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/api/RequestCreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/api/ResponseCreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/api/ResponseCreateUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +48,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ApiTest.createUserTest">
+  <component name="RunManager" selected="JUnit.WebTests.searchTest">
     <configuration name="ApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="framework-example" />
       <extension name="coverage">
@@ -85,22 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.getAllUsersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="framework-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.api" />
-      <option name="MAIN_CLASS_NAME" value="org.example.api.ApiTest" />
-      <option name="METHOD_NAME" value="getAllUsersTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiTest.getUserByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="framework-example" />
       <extension name="coverage">
@@ -117,17 +96,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.getUsersFirstPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTests.changeLanguageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="framework-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.api.*" />
+          <option name="PATTERN" value="org.example.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.api" />
-      <option name="MAIN_CLASS_NAME" value="org.example.api.ApiTest" />
-      <option name="METHOD_NAME" value="getUsersFirstPageTest" />
+      <option name="PACKAGE_NAME" value="org.example.web" />
+      <option name="MAIN_CLASS_NAME" value="org.example.web.WebTests" />
+      <option name="METHOD_NAME" value="changeLanguageTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTests.searchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="framework-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.web" />
+      <option name="MAIN_CLASS_NAME" value="org.example.web.WebTests" />
+      <option name="METHOD_NAME" value="searchTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WebTests.searchTest" />
+        <item itemvalue="JUnit.WebTests.changeLanguageTest" />
         <item itemvalue="JUnit.ApiTest.createUserTest" />
         <item itemvalue="JUnit.ApiTest" />
         <item itemvalue="JUnit.ApiTest.getUserByIdTest" />
-        <item itemvalue="JUnit.ApiTest.getUsersFirstPageTest" />
-        <item itemvalue="JUnit.ApiTest.getAllUsersTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,11 +154,30 @@
       <option name="project" value="LOCAL" />
       <updated>1681649765662</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="API тесты">
+      <created>1681651811355</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681651811355</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial setup" />
+    <MESSAGE value="API тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="API тесты" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/web/WebTests.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
