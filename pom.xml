@@ -19,7 +19,6 @@
         <selenide.version>6.13.0</selenide.version>
         <selenium-chrome-driver.version>4.8.3</selenium-chrome-driver.version>
         <slf4j-simple.version>2.0.7</slf4j-simple.version>
-        <lombok.version>1.18.26</lombok.version>
     </properties>
 
     <dependencies>
@@ -47,11 +46,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j-simple.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
         </dependency>
     </dependencies>
 
